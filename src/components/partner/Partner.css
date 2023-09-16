@@ -1,0 +1,7 @@
+.partner {
+height: 60vh;
+overflow: hidden;
+}
+.partner video {
+   width: 100%;
+}

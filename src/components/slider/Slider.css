@@ -1,0 +1,57 @@
+.container-images {
+    padding: 40px;
+}
+
+.container-images h1 {
+    font-weight: 400;
+    font-size: 45px;
+    letter-spacing: 2px;
+}
+
+.filter-btns {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.filter-btns button {
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 10px;
+    transition: 0.5s ease;
+   
+}
+.filter-btns button:focus{
+    background-color: orange;
+}
+
+.container-images .images {
+    display: flex;
+    overflow: scroll;
+    gap: 40px;
+}
+.images::-webkit-scrollbar{
+    display: none;
+}
+.images img {
+    width: 400px;
+    height: 300px;
+}
+
+
+ .images .item-img span {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: lightsalmon;
+}
+.item-img span:hover {
+    color: orangered;
+}
