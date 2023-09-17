@@ -18,23 +18,29 @@ footer span:hover {
 .footer-container-1 {
     display: flex;
     justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
 .footer-container-2 {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .footer-container-3 {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
     justify-content: space-between;
 }
 
 .footer-container-3-content {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
     color: whitesmoke;
     font-size: 13px;
@@ -73,6 +79,7 @@ footer h2 {
 
 .social-icons {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 30px;
 }
@@ -93,4 +100,10 @@ footer h2 {
     background-color: lightblue;
     color: #1d1f22;
 
+}
+
+@media(max-width:600px) {
+    footer h2 {
+        font-size: 20px;
+    }
 }

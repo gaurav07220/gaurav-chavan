@@ -30,7 +30,7 @@ const Subscribe = () => {
     }
     return (
         <div className='subscribe'>
-            <img src="https://www.neom.com/content/dam/neom/home-b2b/newsletter/home-b2b-newsletter-bg-v4.jpg" alt="" />
+           
             <div className="input" data-aos="fade-right">
                 <div className='heading-input'>
                     <span style={{ fontSize: '48px', fontWeight: 500 }}>GET NEWS & UPDATES</span> <br />

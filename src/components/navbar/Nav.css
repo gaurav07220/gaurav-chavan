@@ -10,16 +10,13 @@ nav {
     justify-content: center;
     background: transparent;
     color: #fff;
-    min-height: 110px;
+    height: 110px;
     padding: 10px;
+    position: fixed;
     gap: 100px;
     z-index: 10;
-    position: fixed;
     top: 0%;
-    width: 100%;
-    object-fit: cover;
-   
-
+    min-width: 100%;
 }
 .menu-icon {
     display: none;
@@ -148,12 +145,25 @@ button {
 @media(max-width:1420px) {
     nav .nav-items,.search,.language {
         display: none;
+       
     }
     .menu-icon {
         display: block;
     }
     nav {
         justify-content: space-around;
-        width: 100%;
     }
+}
+@media(max-width:600px) {
+    .log-lg {
+        margin-right: 30px;
+    }
+    .logo img {
+        height: 40px;
+        width: 40px;
+    }
+   nav{
+    justify-content: center;
+    gap: 40px;
+   }
 }

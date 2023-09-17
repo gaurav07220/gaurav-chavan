@@ -10,9 +10,11 @@ const Hero = () => {
     }, [])
     return (
         <div className="hero">
-            <video autoPlay loop muted >
-                <source src="https://neom.scene7.com/is/content/neom/home-b2b-hero-win-teaser-v2" type="video/mp4" />
-            </video>
+            <div className="hero-video">
+                <video autoPlay loop muted >
+                    <source src="https://neom.scene7.com/is/content/neom/home-b2b-hero-win-teaser-v2" type="video/mp4" />
+                </video>
+            </div>
             <div className="hero-heading" data-aos='fade-down'>
                 <h1>what is neom ?</h1>
                 <div className='more-icon'>

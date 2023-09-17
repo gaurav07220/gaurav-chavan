@@ -1,15 +1,18 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import SearchSharpIcon from '@mui/icons-material/SearchSharp';
 import MenuIcon from '@mui/icons-material/Menu';
 import './Nav.css'
 import { NavLink } from 'react-router-dom';
 import data from '../../SliderData.json';
+import NavTwo from '../vart-nav/NavTwo';
+import { MenuContext } from '../../context/MenuContext';
 
 
 
 const Nav = () => {
     const [navbarVisible, setNavbarVisible] = useState(false);
-    const [about, setAbout] = useState(false)
+    const [about, setAbout] = useState(false);
+    const { handleMenu, menu } = useContext(MenuContext)
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 70) {
@@ -27,6 +30,10 @@ const Nav = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+    const handleClick = () => {
+        handleMenu()
+    }
 
     return (
         <div className='nav-container' >
@@ -51,9 +58,9 @@ const Nav = () => {
                         </NavLink>
                         <div className="regions-content">
                             {
-                                data?.map((item) => {
+                                data?.map((item, index) => {
                                     return (
-                                        <div className='regions-item'>
+                                        <div className='regions-item' key={index}>
                                             <img src={item.url} alt="" />
                                         </div>
                                     )
@@ -113,7 +120,7 @@ const Nav = () => {
                     <div className="invest-btn">
                         <button type='button'>invest in neom</button>
                     </div>
-                    <div className="menu-icon">
+                    <div className="menu-icon" onClick={handleClick}>
                         <MenuIcon />
                     </div>
                 </div>
@@ -128,6 +135,8 @@ const Nav = () => {
                 <div className='career-info'></div>
 
             </div>
+            <NavTwo />
+
         </div>
 
     )

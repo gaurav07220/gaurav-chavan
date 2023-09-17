@@ -16,7 +16,7 @@ const Footer = () => {
     return (
         <footer>
             <div className="footer-container-1" data-aos='fade-right'>
-                <div className='footer-about'>
+                <div className='footer-about' data-aos='fade-right'>
                     <h2>ABOUT</h2>
                     <div className="footer-about-content">
                         <span>What is NEOM</span>
@@ -27,7 +27,7 @@ const Footer = () => {
                         <span style={{ color: 'rgb(218, 216, 216)' }}>Invest in NEOM</span>
                     </div>
                 </div>
-                <div className='footer-regions'>
+                <div className='footer-regions' data-aos='fade-right'>
                     <h2>REGIONS</h2>
                     <div className="footer-regions-content">
                         <span>Sindalah</span>
@@ -37,7 +37,7 @@ const Footer = () => {
                     </div>
 
                 </div>
-                <div className='footer-service'>
+                <div className='footer-service' data-aos='fade-right'>
                     <h2>OUR BUSINESS</h2>
                     <div className="footer-service-content">
                         <span>Sectors</span>
@@ -48,7 +48,7 @@ const Footer = () => {
                     </div>
 
                 </div>
-                <div className='footer-news'>
+                <div className='footer-news' data-aos='fade-right'>
                     <h2>NEWS & SOCIAL</h2>
                     <div className="footer-news-content">
                         <span>News </span>
