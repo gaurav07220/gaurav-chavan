@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import SearchSharpIcon from '@mui/icons-material/SearchSharp';
+import MenuIcon from '@mui/icons-material/Menu';
 import './Nav.css'
 import { NavLink } from 'react-router-dom';
 import data from '../../SliderData.json';
@@ -72,7 +73,7 @@ const Nav = () => {
                             <span> 05 PORT OF NEOM</span>
                         </div>
                     </div>
-                    <div className="news" onMouseOver={()=>setNavbarVisible(true)}>
+                    <div className="news" onMouseOver={() => setNavbarVisible(true)}>
                         <NavLink className='news-text nav-link'>
                             <span>news</span>
                         </NavLink>
@@ -88,7 +89,7 @@ const Nav = () => {
                         </NavLink>
 
                     </div>
-                    <div className="careers" onMouseOver={()=>setNavbarVisible(true)}>
+                    <div className="careers" onMouseOver={() => setNavbarVisible(true)}>
                         <NavLink className='career-text nav-link'>
                             <span>careers</span>
                         </NavLink>
@@ -111,6 +112,9 @@ const Nav = () => {
                     </div>
                     <div className="invest-btn">
                         <button type='button'>invest in neom</button>
+                    </div>
+                    <div className="menu-icon">
+                        <MenuIcon />
                     </div>
                 </div>
             </nav>

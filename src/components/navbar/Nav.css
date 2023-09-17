@@ -14,13 +14,16 @@ nav {
     padding: 10px;
     gap: 100px;
     z-index: 10;
-    position: fixed;
+    position: sticky;
     top: 0%;
     width: 100%;
     object-fit: cover;
+   
 
 }
-
+.menu-icon {
+    display: none;
+}
 .navbar {
     background: #1d1f22;
     transition: 0.4s ease;
@@ -140,4 +143,17 @@ button {
 .news:hover .news-content,
 .careers:hover .careers-content {
     display: flex;
+}
+
+@media(max-width:1420px) {
+    nav .nav-items,.search,.language {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+    }
+    nav {
+        justify-content: space-around;
+        width: 100%;
+    }
 }

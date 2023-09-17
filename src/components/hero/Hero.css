@@ -47,3 +47,30 @@ video {
     -ms-border-radius: 80px;
     -o-border-radius: 80px;
 }
+
+@media(max-width:1000px) {
+    .hero {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .hero video {
+        width: 100%;
+    }
+
+    .hero-heading h1 {
+        font-size: 30px;
+    }
+
+    .hero-heading .play {
+        height: 50px;
+        width: 50px;
+    }
+    .hero-heading .learn {
+        height: 40px;
+        width: 140px;
+    }
+    .hero-heading {
+        bottom: 30%;
+    }
+}

@@ -22,7 +22,7 @@ const WhyChoose = () => {
                     <p>We call ourselves 'dreamers and doers' for a reason: we can make happen not just what is possible, but what is impossible. NEOM is a unique investment opportunity, unrivalled anywhere else. This is not business as usual. Be a part of it. Invest in the new future now, invest in NEOM.</p>
                     <button>INVEST <ArrowRightAltRoundedIcon /></button>
                 </div>
-              
+
             </div>
         </div>
     )
